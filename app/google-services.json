@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10623117728",
+    "project_id": "pokemonteambuilder-64cc4",
+    "storage_bucket": "pokemonteambuilder-64cc4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10623117728:android:ce765146dbcd5337985cc5",
+        "android_client_info": {
+          "package_name": "com.example.poketeambuilder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_wdTHsYMHTEBVAJUxC6o8IjuqYk4EN10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 33
+
+    namespace "com.example.poketeambuilder" // agregado: evita "Namespace not specified"
+
+    defaultConfig {
+        applicationId "com.example.poketeambuilder"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // Room
+    implementation "androidx.room:room-runtime:2.5.2"
+    kapt "androidx.room:room-compiler:2.5.2"
+    implementation "androidx.room:room-ktx:2.5.2"
+
+    // Google Sign-In
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+}
+
+// Configurar kapt para que Room genere esquemas y silenciar advertencia de schema location
+kapt {
+    arguments {
+        arg("room.schemaLocation", "$projectDir/schemas")
+    }
+}
+
+// Si usas google-services.json, aplica el plugin en build.gradle (project) y aquí:
+// apply plugin: 'com.google.gms.google-services'

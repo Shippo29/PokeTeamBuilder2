@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PokeTeamBuilder</string>
+    <!-- Reemplaza el valor con el web client_id que aparece en google-services.json (oauth_client client_type = 3) -->
+    <string name="default_web_client_id">REPLACE_WITH_WEB_CLIENT_ID_FROM_GOOGLE_SERVICES_JSON</string>
+</resources>
